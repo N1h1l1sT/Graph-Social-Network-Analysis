@@ -1,0 +1,18 @@
+Main error
+Time of Error: 2016-06-07 16:08:12.494944
+'list' object has no attribute 'words'
+Main error
+Time of Error: 2016-06-07 16:09:38.974991
+removeStopwords() takes 1 positional argument but 2 were given
+Main error
+Time of Error: 2016-06-07 19:24:50.918798
+'type' object cannot be interpreted as an integer
+Main error
+Time of Error: 2016-06-07 20:36:31.854416
+'list' object has no attribute 'join'
+Main error
+Time of Error: 2016-06-08 15:19:54.282350
+Can't convert 'list' object to str implicitly
+Main error
+Time of Error: 2016-06-08 22:13:49.709609
+'NoneType' object has no attribute 'lower'

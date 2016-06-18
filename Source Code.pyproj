@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{d292c1f3-920c-4279-a10a-8f7a20531a93}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Source Code\TweetProcessing.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <InterpreterVersion />
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+    <PtvsTargetsFile>$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets</PtvsTargetsFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="Source Code\Settings\Greek_Stemming\Step1List.JSON" />
+    <Content Include="Source Code\Settings\Greek_Stemming\Step1List_utf8.JSON" />
+    <Content Include="Source Code\Settings\Greek_Stemming\Step1RegExp.txt" />
+    <Content Include="Source Code\Settings\Greek_Stemming\Step1RegExp_utf8.txt" />
+    <Content Include="Source Code\Settings\Greek_Stemming\v.txt" />
+    <Content Include="Source Code\Settings\Greek_Stemming\v2.txt" />
+    <Content Include="Source Code\Settings\Greek_Stemming\v2_utf8.txt" />
+    <Content Include="Source Code\Settings\Greek_Stemming\v_utf8.txt" />
+    <Content Include="Source Code\Settings\Greek_Stopwords.JSON" />
+    <Content Include="Source Code\Settings\Greek_Stopwords_UTF_8.JSON" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Source Code\TweetStreaming.py" />
+    <Compile Include="Source Code\TweetProcessing.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Source Code\" />
+    <Folder Include="Source Code\Logs\" />
+    <Folder Include="Source Code\Settings\" />
+    <Folder Include="Source Code\Settings\Greek_Stemming\" />
+  </ItemGroup>
+  <Import Project="$(PtvsTargetsFile)" Condition="Exists($(PtvsTargetsFile))" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="!Exists($(PtvsTargetsFile))" />
+</Project>
